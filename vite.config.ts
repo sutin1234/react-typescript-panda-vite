@@ -4,6 +4,7 @@ import path from 'path'
 
 import { defineConfig } from 'vite'
 import checker from 'vite-plugin-checker'
+import { ViteImageOptimizer } from 'vite-plugin-image-optimizer'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -15,6 +16,7 @@ export default defineConfig({
     checker({
       typescript: true,
     }),
+    ViteImageOptimizer(),
   ],
   resolve: {
     alias: {
