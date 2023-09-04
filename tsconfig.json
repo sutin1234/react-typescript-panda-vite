@@ -26,7 +26,8 @@
       "@/*": ["./src/*"],
       "@assets/*": ["./src/assets/*"],
       "@components/*": ["./src/components/*"],
-      "@panda/*": ["./node_modules/styled-system/*"]
+      "@panda/*": ["./node_modules/styled-system/*"],
+      "@pandaType/*": ["./node_modules/styled-system/types/*"],
     },
   },
   "include": ["src"],
