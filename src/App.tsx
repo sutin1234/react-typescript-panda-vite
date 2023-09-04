@@ -13,10 +13,9 @@ function App() {
   const styleObj: SystemStyleObject = {
     bg: 'gray.400',
     // age: 200,
-    // at: 2023
+    // at: 2023,
   }
   const containerStyle = css(styleObj)
-  console.log('containerStyle ', containerStyle)
 
   return (
     <>
