@@ -9,13 +9,11 @@ function App() {
   const [count, setCount] = useState(0)
   const [title, setTitle] = useState('Test Title Component')
 
-
-    console.log('main called')
-
+  css({ bg: 'gray.400'})
 
   return (
     <>
-      <div className={ css({ bgColor: 'red.600'})}>
+      <div>
           <ButtonComponent title={title} onClick={() => setTitle('New Title Component')}/>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
