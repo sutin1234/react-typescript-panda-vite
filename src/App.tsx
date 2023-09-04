@@ -2,15 +2,21 @@ import { useState } from 'react'
 import reactLogo from '@assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import {Test} from "@components/test.compont";
+import {ButtonComponent} from "@components/test.compont";
+import { css } from '@panda/css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [title, setTitle] = useState('Test Title Component')
+
+
+    console.log('main called')
+
 
   return (
     <>
-      <div>
-          <Test title="Test Title Component"/>
+      <div className={ css({ bgColor: 'red.600'})}>
+          <ButtonComponent title={title} onClick={() => setTitle('New Title Component')}/>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>

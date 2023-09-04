@@ -1,16 +1,21 @@
 import { css } from '@panda/css'
-type Props = {
-    title?: string
+import {MouseEventHandler} from "react";
+type ButtonProps = {
+    title?: string,
+    onClick?: MouseEventHandler<HTMLButtonElement>
 }
 const titleStyle = css({
     color: 'blue.400',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    bgColor: 'blue.100',
+    px: 8,
+    borderRadius: '5px'
 })
-export function Test(prop: Props){
+export function ButtonComponent(prop: ButtonProps){
     return(
         <div>
-            <div className={titleStyle}>{prop.title}</div>
-            Test Component
+            <div>{prop.title}</div>
+            <button className={titleStyle} onClick={prop.onClick}>onClick</button>
         </div>
     )
 }
