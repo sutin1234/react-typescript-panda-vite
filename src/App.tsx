@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { ButtonComponent } from '@components/test.compont'
+import { Button } from '@components/buttons/button.compont.tsx'
 import { css } from '@panda/css'
 import { SystemStyleObject } from '@panda/types'
 
@@ -18,7 +18,7 @@ function App() {
   return (
     <>
       <div className={containerStyle}>
-        <ButtonComponent title={title} onClick={() => setTitle('New Title Component')} />
+        <Button title={title} onClick={() => setTitle('New Title Component')} />
       </div>
       <h1>Vite + React</h1>
       <div className='card'>
